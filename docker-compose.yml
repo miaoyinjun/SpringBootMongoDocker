@@ -2,9 +2,11 @@ version : '2'
 services:
 
   springappserver:
-    build:
-      context: .
-      dockerfile: springapp.dockerfile
+    image: registry.cn-hangzhou.aliyuncs.com/jimmy_miao/spring_boot_mongodb
+#    build:
+#      context: .
+#      dockerfile: springapp.dockerfile
+    command: "java -jar SpringBootMongoDocker-1.0-SNAPSHOT.jar"
     ports:
       - "8080:8080"
     volumes:
@@ -13,6 +15,6 @@ services:
         - mongodb:mongodb
 
   mongodb:
-    image: daocloud.io/library/mongo:latest
+    image: mongo
     ports:
       - "27017:27017"
