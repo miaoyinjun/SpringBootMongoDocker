@@ -108,7 +108,7 @@
                         </resource>
                     </resources>
                     <imageTags>
-                        <imageTag>${git.commit.id.abbrev}</imageTag>
+                        <imageTag>${git.build.version}</imageTag>
                         <imageTag>latest</imageTag>
                     </imageTags>
                     <serverId>docker-aliyun</serverId>
