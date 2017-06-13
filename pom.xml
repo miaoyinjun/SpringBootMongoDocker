@@ -99,11 +99,14 @@
                             <include>${project.build.finalName}.jar</include>
                         </resource>
                     </resources>
+                    <imageTags>
+                        <imageTag>${git.commit.id.abbrev}</imageTag>
+                        <imageTag>latest</imageTag>
+                    </imageTags>
                     <serverId>docker-aliyun</serverId>
                 </configuration>
             </plugin>
         </plugins>
-        <!--<defaultGoal>compile</defaultGoal>-->
     </build>
 
     <repositories>
