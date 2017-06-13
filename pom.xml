@@ -108,7 +108,7 @@
                         </resource>
                     </resources>
                     <imageTags>
-                        <imageTag>${git.closest.tag.commit.count}</imageTag>
+                        <imageTag>${git.tags}</imageTag>
                         <imageTag>latest</imageTag>
                     </imageTags>
                     <serverId>docker-aliyun</serverId>
