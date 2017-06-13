@@ -89,6 +89,7 @@
                 <artifactId>git-commit-id-plugin</artifactId>
                 <configuration>
                     <failOnNoGitDirectory>false</failOnNoGitDirectory>
+                    <dateFormat>dd.MM.yyyy ' ' HH:mm:ss</dateFormat>
                 </configuration>
             </plugin>
 
@@ -108,7 +109,7 @@
                         </resource>
                     </resources>
                     <imageTags>
-                        <imageTag>${git.tags}</imageTag>
+                        <imageTag>${git.commit.time}</imageTag>
                         <imageTag>latest</imageTag>
                     </imageTags>
                     <serverId>docker-aliyun</serverId>
