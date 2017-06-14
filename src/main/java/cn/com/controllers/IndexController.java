@@ -35,7 +35,7 @@ public class IndexController {
     @RequestMapping(value = "/", method = RequestMethod.GET,
             produces = "application/json;charset=utf-8")
     public List<User> home() {
-        System.out.println("11121212121212121212");
+        System.out.println("22");
 //        return datastore.createQuery(User.class).asList();
         List<User> list = new ArrayList<>();
         list.add(new User());
